@@ -8,6 +8,8 @@ import { MongoModule } from './database/mongo.module';
 import { AuthModule } from './core/auth/auth.module';
 import { RolesModule } from './modules/roles/roles.module';
 import { AppsModule } from './modules/apps/apps.module';
+import { TenantsModule } from './modules/tenants/tenants.module';
+import { CountersModule } from './common/counters/counters.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { AppsModule } from './modules/apps/apps.module';
     AuthModule,
     RolesModule,
     AppsModule,
+    TenantsModule,
+    CountersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
